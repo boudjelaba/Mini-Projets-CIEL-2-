@@ -59,7 +59,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 <a id="MP1"></a>
 ### <cite><font color="#F2A900"> Mini-Projet 1 : </font></cite>
 
-| Tâche-1 (E.F. ~~et M.D.~~) | Fonctions à développer et tâches à effectuer |
+| Tâche-1 (N10.P10. N11.P11) | Fonctions à développer et tâches à effectuer |
 | -------------- |:----------------------------------------|
 | Vidéo surveillance | Installation de la caméra (logiciel)|
 |  | Développement en Python du programme de surveillance  |
@@ -68,7 +68,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Rédaction d'un rapport                                 |
 
 
-|Tâche-2 (R.R. et Y.F.)| Fonctions à développer et tâches à effectuer|
+|Tâche-2 (N12.P12. et N13.P13.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | Détection de mouvement | Installation du module          |
 |  |Développement en C++ (Arduino) du programme de détection|
@@ -76,7 +76,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Documentation logicielle                               |
 |  |Rédaction d'un rapport                                 |
 
-|Tâche-3 (V.M.)| Fonctions à développer et tâches à effectuer|
+|Tâche-3 (N14.P14.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | Réseaux | Installation du serveur Linux virtualisé       |
 |  | Services Web sur serveur                              |
