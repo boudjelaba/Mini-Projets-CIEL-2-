@@ -59,7 +59,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 <a id="MP1"></a>
 ### <cite><font color="#F2A900"> Mini-Projet 1 : </font></cite>
 
-| Tâche-1 (N10.P10. N11.P11) | Fonctions à développer et tâches à effectuer |
+| Tâche-1 (L.D. A.G) | Fonctions à développer et tâches à effectuer |
 | -------------- |:----------------------------------------|
 | Vidéo surveillance | Installation de la caméra (logiciel)|
 |  | Développement en Python du programme de surveillance  |
@@ -68,7 +68,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Rédaction d'un rapport                                 |
 
 
-|Tâche-2 (N12.P12. et N13.P13.)| Fonctions à développer et tâches à effectuer|
+|Tâche-2 (C.F. et T.H.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | Détection de mouvement | Installation du module          |
 |  |Développement en C++ (Arduino) du programme de détection|
@@ -76,7 +76,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Documentation logicielle                               |
 |  |Rédaction d'un rapport                                 |
 
-|Tâche-3 (N14.P14.)| Fonctions à développer et tâches à effectuer|
+|Tâche-3 (E.D.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | Réseaux | Installation du serveur Linux virtualisé       |
 |  | Services Web sur serveur                              |
@@ -89,7 +89,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 <a id="MP2"></a>
 ### <cite><font color="#F2A900"> Mini-Projet 2 : </font></cite>
 
-| Tâche-1 (P1.N1. et P2.N2.) | Fonctions à développer et tâches à effectuer |
+| Tâche-1 (N.P. et T.L.) | Fonctions à développer et tâches à effectuer |
 | -------------- |:----------------------------------------|
 | Contrôle d'accès | Installation du module                |
 |  | Développement en C++ (Arduino) du programme de contrôle d'accès  |
@@ -98,7 +98,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Rédaction d'un rapport                                 |
 
 
-|Tâche-2 (P3.N3. et P4.N4.)| Fonctions à développer et tâches à effectuer|
+|Tâche-2 (L.T. et R.G.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | QR code et authentification | Développement en PHP du logiciel d'identification |
 |  |Développement du logiciel de réservation               |
@@ -106,7 +106,7 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 |  |Documentation logicielle                               |
 |  |Rédaction d'un rapport                                 |
 
-|Tâche-3 (P5.N5 et P6.N6.)| Fonctions à développer et tâches à effectuer|
+|Tâche-3 (N.D et A.P.)| Fonctions à développer et tâches à effectuer|
 | -------------- |:----------------------------------------|
 | Réseaux | Installation du serveur Linux virtualisé       |
 |  | Services Web sur serveur                              |
