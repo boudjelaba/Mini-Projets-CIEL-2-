@@ -142,4 +142,51 @@ Les capteureurs de présence (caméra, détecteur de mouvement) permettront l’
 - Exigences, Analyse, Conception, Mise en œuvre (implémentation), Test
 - Besoin/Faisabilité, Élaboration, Fabrication, Transition/Test
 
+---
+---
 
+### **Tâche 1 : Vidéosurveillance (L.D., A.G.)**
+
+| Fonctionnalités           | Détails                                                |
+| ------------------------- | ------------------------------------------------------ |
+| Installation de la caméra | Mise en place du matériel, configuration du flux vidéo |
+| Développement Python      | Programme de surveillance et détection d’événements    |
+| Base de données           | Enregistrement des images, logs et métadonnées         |
+| Documentation             | Manuel technique + schémas                             |
+| Rapport                   | Compte-rendu détaillé                                  |
+
+#### Remarques :
+
+Au lieu de stocker l’image **dans** la BDD, on stocke l’image **dans un dossier sur le serveur**, et on stocke **seulement le chemin** dans la base.
+
+Exemple :
+
+1. Le PC détecte un mouvement
+2. Il capture une image `img_2025-12-02_14h32.jpg`
+3. Il envoie l’image via API au serveur Linux
+4. Le serveur **stocke l’image dans `/var/www/images/`**
+5. La BDD stocke seulement :
+
+```
+id_log | timestamp      | type          | file_path
+---------------------------------------------------------------
+1452   | 2025-12-02 14:32:04 | detection_mouvement | /images/img_2025...
+``` 
+
+```
+[ESP32 PIR] ----> [Serveur Linux - API] ---> [BDD logs PIR]
+                       ↑
+                       |
+[PC Portable Webcam] --|--> Envoi des images + logs vidéo
+                       |
+                       ↓
+               [Stockage images détectées]
+```
+
+Le PC portable joue le rôle de :
+
+* système de vidéosurveillance
+* analyse OpenCV
+* capture image en cas de mouvement
+* envoi des alertes/images au serveur
+* 
