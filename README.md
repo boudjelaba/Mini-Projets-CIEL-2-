@@ -1,5 +1,3 @@
-# Mini-Projets-CIEL-2-
-
 # <cite><font color="(0,68,88)">Mini-Projets CIEL-2</font></cite>
 
 <a href="https://carnus.fr"><img src="https://img.shields.io/badge/Carnus%20Enseignement Supérieur-F2A900?style=for-the-badge" /></a>
