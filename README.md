@@ -189,4 +189,61 @@ Le PC portable joue le rôle de :
 * analyse OpenCV
 * capture image en cas de mouvement
 * envoi des alertes/images au serveur
-* 
+
+---
+---
+
+## Capteur de mouvements
+
+```cpp
+// Broche du capteur PIR
+const int PIR_PIN = 27;
+
+// Durée pendant laquelle le signal doit rester haut pour être considéré comme valide (ms)
+const unsigned long STABLE_TIME = 80;  
+
+// Temps mort après détection (pour éviter les oscillations) 
+const unsigned long COOLDOWN_TIME = 300;  
+
+unsigned long lastHighTime = 0;
+unsigned long lastDetection = 0;
+
+bool movementDetected = false;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(PIR_PIN, INPUT);
+}
+
+void loop() {
+
+  int pirValue = digitalRead(PIR_PIN);
+
+  // Si le PIR passe à HIGH --> démarrer une mesure temporelle
+  if (pirValue == HIGH) {
+
+    if (lastHighTime == 0) {
+      lastHighTime = millis();  // première impulsion
+    }
+
+    // Si le signal reste haut suffisamment longtemps --> mouvement validé
+    if ((millis() - lastHighTime > STABLE_TIME) &&
+        (millis() - lastDetection > COOLDOWN_TIME)) {
+
+      movementDetected = true;
+      lastDetection = millis();
+      Serial.println("Mouvement détecté !");
+    }
+
+  } else {
+    // Reset du timer si le signal redescend trop vite
+    lastHighTime = 0;
+  }
+
+  if (movementDetected) {
+    // allumer une LED, envoyer un message ...
+    movementDetected = false;
+  }
+}
+
+```
